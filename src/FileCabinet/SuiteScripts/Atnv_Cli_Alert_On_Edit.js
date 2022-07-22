@@ -39,15 +39,15 @@
 									id: recordId,
 									isDynamic: true,
 									});
-							var getNotes = objRecord.getValue('custrecord_atnv_notes_to_record');
+							var getNote = objRecord.getValue('custrecord_atnv_notes_to_record');
 							var getCurrentNotes = currentRecord.getValue('custrecord_atnv_notes_to_record');
 							
-							if(getCurrentNotes == getNotes)
+							if(getCurrentNotes == getNote)
 							{
 								dialog.alert({
 										title: 'Edit Reason',
 										message: 'Please Update the Notes for the reason of Edit'
-										});
+										}); janardhanAttentive/janardhanAttentive
                               return false;
 							}
 						
